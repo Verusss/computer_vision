@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import os
 
-# 0,1,2
+# 0,1,2 - to generate second_version models, artist names need to be changed 
 artists = ['Vincent_van_Gogh', 'Pablo_Picasso', 'Edgar_Degas']
 X = []
 y = []
