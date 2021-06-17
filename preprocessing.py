@@ -2,9 +2,9 @@ import numpy as np
 import cv2
 from skimage.feature import local_binary_pattern, hog
 
-numPoints = 8 #12 #8
-radius = 4 #8 #12
-X = np.load('data_gray.npy', allow_pickle = True)
+numPoints = 12
+radius = 8
+X = np.load('data_gray_test.npy', allow_pickle = True)
 
 X_lbp = []
 for image in X:
@@ -15,6 +15,4 @@ for image in X:
 #cv2.imwrite('test.jpg', lbp_image)
 #cv2.imwrite('test1.jpg', hog_image)
 
-_X = np.array(X_lbp)
-
-np.save('data_lbp.npy', _X)
+np.save('third_version/data_lbp_12_8_44_11.npy', X_lbp)
